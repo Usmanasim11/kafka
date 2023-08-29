@@ -1,0 +1,10 @@
+
+kubectl create namespace confluent
+kubectl config set-context --current --namespace confluent
+helm repo add confluentinc https://packages.confluent.io/helm
+helm upgrade --install confluent-operator confluentinc/confluent-for-kubernetes --namespace confluent
+
+link: https://github.com/confluentinc/confluent-kubernetes-examples/tree/master/quickstart-deploy
+
+
+link: https://openebs.io/docs/user-guides/localpv-hostpath
