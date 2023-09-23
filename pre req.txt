@@ -5,6 +5,9 @@ helm repo add confluentinc https://packages.confluent.io/helm
 helm upgrade --install confluent-operator confluentinc/confluent-for-kubernetes --namespace confluent
 
 create a dir dir on k8-worker node
+
+/var/local-hostpath
+
 cd /mnt
 mkdir local-hostpath
 chmod 777 local-hostpath
